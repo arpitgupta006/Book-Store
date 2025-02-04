@@ -1,0 +1,100 @@
+/* General card styling */
+.book-card {
+  width: 100%;
+  height: 300px; /* Fixed height for the card */
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  background-color: #ccc; /* Fallback color in case the image fails to load */
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease; /* Removed box-shadow */
+  cursor: pointer;
+}
+
+.book-card-overlay {
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+  padding: 15px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+
+  /* Card content styling */
+  .book-card-content {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .book-card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .book-card-author,
+  .book-card-genre {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  .book-card-description {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  
+  .book-card-button {
+    display: inline-block;
+    background: #ff6f61;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover effect for the button */
+  .book-card-button:hover {
+    background: #ff6f61;
+    color: #fff;
+  }
+  
+  /* Card hover effect */
+  .book-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Add subtle background animation
+ 
+  .book-card:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.3), transparent); 
+    animation: glow 6s linear infinite; 
+  }
+      */   
+
+  /* Glow animation  */
+  @keyframes glow {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(50%, 50%);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+ 

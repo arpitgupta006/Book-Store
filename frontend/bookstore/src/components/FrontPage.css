@@ -1,0 +1,38 @@
+.container {
+    background: linear-gradient(135deg, #8e44ad, #3498db);
+    padding: 30px;
+    border-radius: 15px;
+    color: #fff;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+  }
+  
+  /* Container for the grid */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns in the grid */
+  gap: 20px; /* Spacing between cards */
+  margin-top: 20px;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+  .book-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .book-grid {
+    grid-template-columns: 1fr; /* 1 column on very small screens */
+  }
+}

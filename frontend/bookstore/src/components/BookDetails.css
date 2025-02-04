@@ -1,0 +1,147 @@
+/* Page container with background image */
+.book-details-page {
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Overlay to darken the background for better readability */
+  .book-details-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Content container */
+  .book-details-content {
+    color: #fff;
+    padding: 20px;
+    max-width: 800px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Headings and paragraphs */
+  .book-details-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff
+  }
+  
+  .book-details-content p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  .book-details-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .book-details-content ul li {
+    background: rgba(255, 255, 255, 0.2);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+ /* Review form */
+/* Review form */
+.review-form {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px); /* Adds a subtle blur effect */
+}
+
+.review-form label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333; /* Text remains visible over the transparent background */
+}
+
+.review-form input,
+.review-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 5px;
+  background: rgba(255, 255, 255, 0.8); /* Slightly opaque input fields */
+}
+
+.review-form textarea {
+  resize: vertical;
+}
+
+.review-form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.review-form button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.review-form button:hover:enabled {
+  background-color: #0056b3;
+}
+
+
+.review-form input,
+.review-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 5px;
+  background: rgba(255, 255, 255, 0.8); /* Slightly opaque input fields */
+}
+
+.review-form textarea {
+  resize: vertical;
+}
+
+
+/* Rating stars */
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rating svg {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.rating svg:hover {
+  transform: scale(1.2);
+}
